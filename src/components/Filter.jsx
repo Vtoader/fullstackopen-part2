@@ -1,8 +1,11 @@
-const Note = (note) => {
-    console.log(note)
+const Filter = (props) => {
     return (
-        <li>{note.content}</li>
+        <form>
+            <div>
+                search person: <input value={props.personSearch} onChange={props.handleSearchPerson} />
+            </div>
+        </form>
     )
 }
 
-export default Note;
+export default Filter;
